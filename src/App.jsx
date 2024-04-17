@@ -1,6 +1,6 @@
 import { HeroHighlightSection } from './section/HeroHighlight';
 import Navbar from './section/Navbar';
-import { Events } from './section/Events';
+// import { Events } from './section/Events';
 import { Sponsers } from './section/Sponsers';
 
 import './global.css';
@@ -10,7 +10,7 @@ const App = () => {
 		<div>
 			<Navbar />
 			<HeroHighlightSection />
-			<Events />
+			{/* <Events /> */}
 			<Sponsers />
 		</div>
 	);

@@ -2,12 +2,11 @@ import { motion } from 'framer-motion';
 
 import HeroBanner from '../assets/hero-banner.jpeg';
 import { HeroHighlight, Highlight } from '../components/ui/hero-highlight';
-import { BackgroundGradient } from '../components/ui/background-gradient';
 
 export function HeroHighlightSection() {
 	return (
 		<HeroHighlight>
-			<div className="flex flex-col lg:flex-row items-center gap-10 mt-[400px] md:mt-0">
+			<div className="flex flex-col lg:flex-row items-center gap-10 mt-[100px] md:mt-0">
 				<div>
 					<motion.h1
 						initial={{
@@ -71,13 +70,11 @@ export function HeroHighlightSection() {
 						ease: [0.4, 0.0, 0.2, 1],
 					}}
 				>
-					<BackgroundGradient className="rounded-[22px] max-w-sm p-0.5 bg-white dark:bg-zinc-900">
-						<img
-							src={HeroBanner}
-							alt="Banner"
-							className="h-[400px] md:h-[500px] rounded-[22px]"
-						/>
-					</BackgroundGradient>
+					<img
+						src={HeroBanner}
+						alt="Banner"
+						className="h-[400px] md:h-[500px] rounded-[22px]"
+					/>
 				</motion.div>
 			</div>
 		</HeroHighlight>
