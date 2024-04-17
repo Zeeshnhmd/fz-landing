@@ -5,7 +5,10 @@ import { Meteors } from '../components/ui/meteors';
 
 export function Events() {
 	return (
-		<div className="flex flex-col items-center justify-center z-20 pt-10">
+		<div
+			className="flex flex-col items-center justify-center z-20 pt-10"
+			id="events"
+		>
 			<h1 className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug">
 				Our Events
 			</h1>

@@ -7,7 +7,10 @@ import Sponser5 from '../assets/sponser-55.jpg';
 
 export const Sponsers = () => {
 	return (
-		<div className="flex flex-col items-center justify-center z-20 pb-10 md:pb-20">
+		<div
+			className="flex flex-col items-center justify-center z-20 pb-10 md:pb-20"
+			id="sponsers"
+		>
 			<h1 className="text-2xl pb-5 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug">
 				Our Sponsers
 			</h1>

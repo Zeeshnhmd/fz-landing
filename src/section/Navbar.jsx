@@ -9,13 +9,15 @@ const Navbar = () => {
 			<nav className="absolute left-[50%] top-[50%] trasfrom translate-x-[-50%] translate-y-[-50%] hidden md:block">
 				<ul className="flex items-center gap-4  list-none">
 					<li className="cursor-pointer">
-						<a to="/">Event</a>
+						<a href="#events">Events</a>
 					</li>
 					<li className="cursor-pointer">
-						<a to="/">Timeline</a>
+						<a href="#sponsers">Sponsers</a>
 					</li>
 					<li className="cursor-pointer">
-						<a to="/">Main Site</a>
+						<a href="/" target="_blank">
+							Main Site
+						</a>
 					</li>
 				</ul>
 			</nav>
@@ -26,7 +28,9 @@ const Navbar = () => {
 				>
 					<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 					<span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-						Contact Us
+						<a href="" target="_blank">
+							Contact Us
+						</a>
 					</span>
 				</a>
 			</aside>
