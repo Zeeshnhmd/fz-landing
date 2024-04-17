@@ -72,7 +72,7 @@ export function HeroHighlightSection() {
 				<img
 					src={HeroBanner}
 					alt="Banner"
-					className="h-[400px] md:h-[500px] rounded-[22px]"
+					className="h-[400px] md:h-[500px] rounded-lg"
 				/>
 			</motion.div>
 		</div>

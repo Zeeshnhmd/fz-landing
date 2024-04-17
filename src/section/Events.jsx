@@ -13,16 +13,16 @@ export function Events() {
 				{eventContents.map((el) => (
 					<div
 						key={el.id}
-						className="w-full relative max-w-xs rounded-2xl border border-gray-800"
+						className="w-full relative max-w-xs rounded-lg border border-gray-800"
 					>
 						<div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-						<div className="inline-flex items-center justify-center rounded-2xl bg-gray-900 backdrop-blur-3xl">
-							<div className="relative overflow-hidden rounded-2xl">
+						<div className="inline-flex items-center justify-center rounded-lg bg-gray-900 backdrop-blur-3xl">
+							<div className="relative overflow-hidden rounded-lg">
 								<div className="overflow-hidden">
 									<img
 										src={el.poster}
 										alt="thumbnail"
-										className={`rounded-t-2xl`}
+										className={`rounded-t-lg`}
 									/>
 								</div>
 								<div className=" relative p-4">
@@ -36,10 +36,10 @@ export function Events() {
 										{el.description}
 									</h2>
 									<div className="flex flex-row justify-between items-center mt-5">
-										<div className="relative z-10 px-6 py-2 bg-white text-black font-bold rounded-xl block text-xs">
+										<div className="relative z-10 px-6 py-2 bg-white text-black font-bold rounded-md block text-xs">
 											<a href={el.ruleBook}>Rule Book</a>
 										</div>
-										<div className="relative z-10 px-6 py-2 bg-white text-black font-bold rounded-xl block text-xs">
+										<div className="relative z-10 px-6 py-2 bg-white text-black font-bold rounded-md block text-xs">
 											<a href={el.googleForm}>Register</a>
 										</div>
 										<Meteors number={20} />
