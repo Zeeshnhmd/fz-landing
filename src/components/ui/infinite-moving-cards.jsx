@@ -76,11 +76,14 @@ export const InfiniteMovingCards = ({
 				)}
 			>
 				{items.map((item) => (
-					<li
-						className="w-[250px] max-w-full relative  md:w-[350px]"
-						key={item?.id}
-					>
-						<img src={item?.image} alt={item?.sponserName} />
+					<li key={item?.id} className="bg-white p-4 rounded-lg">
+						<img
+							src={item?.image}
+							alt={item?.id}
+							className={`w-[250px] h-[80px] object-contain ${
+								item.id === 5 && 'w-[100px]'
+							}`}
+						/>
 					</li>
 				))}
 			</ul>

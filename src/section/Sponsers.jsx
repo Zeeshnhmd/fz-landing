@@ -1,5 +1,9 @@
 import { InfiniteMovingCards } from '../components/ui/infinite-moving-cards';
-import Sponser from '../assets/sponsers.jpg';
+import Sponser1 from '../assets/sponser-11.png';
+import Sponser2 from '../assets/sponser-22.png';
+import Sponser3 from '../assets/sponser-33.png';
+import Sponser4 from '../assets/sponser-44.png';
+import Sponser5 from '../assets/sponser-55.jpg';
 
 export const Sponsers = () => {
 	return (
@@ -13,15 +17,9 @@ export const Sponsers = () => {
 };
 
 const sponsers = [
-	{ image: Sponser },
-	{ image: Sponser },
-	{ image: Sponser },
-	{ image: Sponser },
-	{ image: Sponser },
-	{ image: Sponser },
-	{ image: Sponser },
-	{ image: Sponser },
-	{ image: Sponser },
-	{ image: Sponser },
-	{ image: Sponser },
+	{ id: 1, image: Sponser1 },
+	{ id: 2, image: Sponser2 },
+	{ id: 3, image: Sponser3 },
+	{ id: 4, image: Sponser4 },
+	{ id: 5, image: Sponser5 },
 ];
