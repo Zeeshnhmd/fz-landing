@@ -1,6 +1,6 @@
-import Poster1 from '../assets/poster-11.jpg';
-import Poster2 from '../assets/poster-22.jpg';
-import Poster3 from '../assets/poster-33.jpg';
+import Poster1 from '../assets/poster-11.webp';
+import Poster2 from '../assets/poster-22.webp';
+import Poster3 from '../assets/poster-33.webp';
 
 export function Events() {
 	return (
@@ -8,16 +8,16 @@ export function Events() {
 			<h1 className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug">
 				Our Events
 			</h1>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-10 max-w-7xl">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-10 max-w-7xl px-5">
 				{eventContents.map((el) => (
 					<div
 						key={el.id}
 						className="relative inline-flex overflow-hidden rounded-2xl p-[2px]"
 					>
 						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-						<div className="inline-flex h-full w-full items-center justify-center rounded-2xl bg-slate-950 backdrop-blur-3xl">
-							<div className="relative overflow-hidden h-full rounded-2xl">
-								<div className="w-full aspect-w-16 aspect-h-10 rounded-tr-lg rounded-tl-lg overflow-hidden xl:aspect-w-16 xl:aspect-h-10 relative">
+						<div className="inline-flex items-center justify-center rounded-2xl bg-slate-950 backdrop-blur-3xl">
+							<div className="relative overflow-hidden rounded-2xl">
+								<div className="overflow-hidden">
 									<img
 										src={el.poster}
 										alt="thumbnail"
