@@ -1,6 +1,7 @@
 import Poster1 from '../assets/poster-11.webp';
 import Poster2 from '../assets/poster-22.webp';
 import Poster3 from '../assets/poster-33.webp';
+import { Meteors } from '../components/ui/meteors';
 
 export function Events() {
 	return (
@@ -12,10 +13,10 @@ export function Events() {
 				{eventContents.map((el) => (
 					<div
 						key={el.id}
-						className="relative inline-flex overflow-hidden rounded-2xl p-[2px]"
+						className="w-full relative max-w-xs rounded-2xl border border-gray-800"
 					>
-						{/* <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" /> */}
-						<div className="inline-flex items-center justify-center rounded-2xl bg-slate-950 backdrop-blur-3xl">
+						<div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+						<div className="inline-flex items-center justify-center rounded-2xl bg-gray-900 backdrop-blur-3xl">
 							<div className="relative overflow-hidden rounded-2xl">
 								<div className="overflow-hidden">
 									<img
@@ -24,7 +25,7 @@ export function Events() {
 										className={`rounded-t-2xl`}
 									/>
 								</div>
-								<div className="p-4">
+								<div className=" relative p-4">
 									<div className="flex items-center justify-between">
 										<h2 className="font-bold my-2 text-lg text-white">
 											{el.eventname}
@@ -41,8 +42,9 @@ export function Events() {
 										<div className="relative z-10 px-6 py-2 bg-white text-black font-bold rounded-xl block text-xs">
 											<a href={el.googleForm}>Register</a>
 										</div>
+										<Meteors number={20} />
 									</div>
-								</div>
+								</div>{' '}
 							</div>
 						</div>
 					</div>
