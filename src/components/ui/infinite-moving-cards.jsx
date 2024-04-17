@@ -80,8 +80,8 @@ export const InfiniteMovingCards = ({
 						<img
 							src={item?.image}
 							alt={item?.id}
-							className={`w-[250px] h-[80px] object-contain ${
-								item.id === 5 && 'w-[100px]'
+							className={`w-[150px] h-[45px] md:w-[250px] md:h-[80px] object-contain ${
+								item.id === 5 && 'w-[50px] h-[45px] md:w-[80px] md:h-[80px]'
 							}`}
 						/>
 					</li>

@@ -5,7 +5,7 @@ import { Highlight } from '../components/ui/hero-highlight';
 
 export function HeroHighlightSection() {
 	return (
-		<div className="flex flex-col lg:flex-row items-center gap-10 h-full lg:h-[100vh] mt-[100px] md:mt-0">
+		<div className="flex flex-col lg:flex-row items-center gap-10 h-full lg:h-[100vh] mt-[100px] lg:mt-0">
 			<div>
 				<motion.h1
 					initial={{

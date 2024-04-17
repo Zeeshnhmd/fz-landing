@@ -5,15 +5,19 @@ import { HeroHighlight } from './components/ui/hero-highlight';
 import { Events } from './section/Events';
 
 import './global.css';
+import { Footer } from './section/Footer';
 
 const App = () => {
 	return (
-		<HeroHighlight>
-			<Navbar />
-			<HeroHighlightSection />
-			<Events />
-			<Sponsers />
-		</HeroHighlight>
+		<>
+			<HeroHighlight>
+				<Navbar />
+				<HeroHighlightSection />
+				<Events />
+				<Sponsers />
+			</HeroHighlight>
+			<Footer />
+		</>
 	);
 };
 
