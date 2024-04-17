@@ -17,13 +17,13 @@ export function Events() {
 						{/* <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" /> */}
 						<div className="inline-flex items-center justify-center rounded-2xl bg-slate-950 backdrop-blur-3xl">
 							<div className="relative overflow-hidden rounded-2xl">
-								{/* <div className="overflow-hidden">
+								<div className="overflow-hidden">
 									<img
 										src={el.poster}
 										alt="thumbnail"
 										className={`rounded-t-2xl`}
 									/>
-								</div> */}
+								</div>
 								<div className="p-4">
 									<div className="flex items-center justify-between">
 										<h2 className="font-bold my-2 text-lg text-white">
