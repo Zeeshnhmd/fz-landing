@@ -1,18 +1,18 @@
 import { HeroHighlightSection } from './section/HeroHighlight';
 import Navbar from './section/Navbar';
-// import { Events } from './section/Events';
 import { Sponsers } from './section/Sponsers';
+import { HeroHighlight } from './components/ui/hero-highlight';
 
 import './global.css';
 
 const App = () => {
 	return (
-		<div>
+		<HeroHighlight>
 			<Navbar />
 			<HeroHighlightSection />
 			{/* <Events /> */}
 			<Sponsers />
-		</div>
+		</HeroHighlight>
 	);
 };
 
